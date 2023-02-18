@@ -45,6 +45,9 @@
 		87CCEBD829A1815D00430C58 /* Int+Billions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBD729A1815D00430C58 /* Int+Billions.swift */; };
 		87CCEBDA29A1820600430C58 /* IntExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBD929A1820600430C58 /* IntExtensionTests.swift */; };
 		87CCEBDC29A1825F00430C58 /* NumberFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBDB29A1825F00430C58 /* NumberFormatterTests.swift */; };
+		87CCEBE129A1871E00430C58 /* MarketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBE029A1871E00430C58 /* MarketsView.swift */; };
+		87CCEBE429A18DCE00430C58 /* LocalizedMarket+PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBE329A18DCE00430C58 /* LocalizedMarket+PreviewData.swift */; };
+		87CCEBE629A18FE300430C58 /* MarketsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBE529A18FE300430C58 /* MarketsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,9 @@
 		87CCEBD729A1815D00430C58 /* Int+Billions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Billions.swift"; sourceTree = "<group>"; };
 		87CCEBD929A1820600430C58 /* IntExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensionTests.swift; sourceTree = "<group>"; };
 		87CCEBDB29A1825F00430C58 /* NumberFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterTests.swift; sourceTree = "<group>"; };
+		87CCEBE029A1871E00430C58 /* MarketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsView.swift; sourceTree = "<group>"; };
+		87CCEBE329A18DCE00430C58 /* LocalizedMarket+PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedMarket+PreviewData.swift"; sourceTree = "<group>"; };
+		87CCEBE529A18FE300430C58 /* MarketsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +166,8 @@
 				87B9819229A05ADA004C9225 /* Entities */,
 				87CCEBCD29A1792100430C58 /* Localization */,
 				87CCEBA529A156AF00430C58 /* Networking */,
+				87CCEBDD29A186DA00430C58 /* Markets */,
+				87CCEBE229A18DA400430C58 /* PreviewData */,
 				87B9816829A059C5004C9225 /* FlowwApp.swift */,
 				87B9816A29A059C5004C9225 /* ContentView.swift */,
 				87B9816C29A059C7004C9225 /* Assets.xcassets */,
@@ -300,6 +308,23 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		87CCEBDD29A186DA00430C58 /* Markets */ = {
+			isa = PBXGroup;
+			children = (
+				87CCEBE029A1871E00430C58 /* MarketsView.swift */,
+				87CCEBE529A18FE300430C58 /* MarketsCell.swift */,
+			);
+			path = Markets;
+			sourceTree = "<group>";
+		};
+		87CCEBE229A18DA400430C58 /* PreviewData */ = {
+			isa = PBXGroup;
+			children = (
+				87CCEBE329A18DCE00430C58 /* LocalizedMarket+PreviewData.swift */,
+			);
+			path = PreviewData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B9819E29A05BD2004C9225 /* Currency.swift in Sources */,
+				87CCEBE429A18DCE00430C58 /* LocalizedMarket+PreviewData.swift in Sources */,
 				87B9819D29A05BD2004C9225 /* Interval.swift in Sources */,
 				87CCEBBF29A16B0600430C58 /* FetchMarkets.swift in Sources */,
 				87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */,
@@ -438,12 +464,14 @@
 				87B981A029A05BD2004C9225 /* Order.swift in Sources */,
 				87B9819629A05AF0004C9225 /* Chart.swift in Sources */,
 				87B9816B29A059C5004C9225 /* ContentView.swift in Sources */,
+				87CCEBE629A18FE300430C58 /* MarketsCell.swift in Sources */,
 				87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */,
 				87CCEBD329A17A2E00430C58 /* NumberFormatter+Constants.swift in Sources */,
 				87CCEBC329A16B5400430C58 /* EndPoint+CoinGecko.swift in Sources */,
 				87CCEBC129A16B3400430C58 /* FetchChart.swift in Sources */,
 				87CCEBCF29A1793500430C58 /* LocalizedMarket.swift in Sources */,
 				87B9816929A059C5004C9225 /* FlowwApp.swift in Sources */,
+				87CCEBE129A1871E00430C58 /* MarketsView.swift in Sources */,
 				87CCEBD829A1815D00430C58 /* Int+Billions.swift in Sources */,
 				87CCEBC529A16B9500430C58 /* Entities+CoinGecko.swift in Sources */,
 				87B9819429A05AEB004C9225 /* Market.swift in Sources */,
