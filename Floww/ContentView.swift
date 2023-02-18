@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationSplitView {
+            MarketsView(cells: LocalizedMarket.previewData.map(MarketsCell.market))
+        } detail: {
+            EmptyView()
         }
-        .padding()
+
     }
 }
 
