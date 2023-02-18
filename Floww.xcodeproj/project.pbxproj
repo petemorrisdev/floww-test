@@ -32,6 +32,12 @@
 		87CCEBB529A15C0400430C58 /* DecodableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBB429A15C0400430C58 /* DecodableMock.swift */; };
 		87CCEBB729A15D5D00430C58 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */; };
 		87CCEBB929A15F8200430C58 /* URLComponents+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBB829A15F8200430C58 /* URLComponents+TestData.swift */; };
+		87CCEBBD29A16AA700430C58 /* CoinGecko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBBC29A16AA600430C58 /* CoinGecko.swift */; };
+		87CCEBBF29A16B0600430C58 /* FetchMarkets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBBE29A16B0600430C58 /* FetchMarkets.swift */; };
+		87CCEBC129A16B3400430C58 /* FetchChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBC029A16B3400430C58 /* FetchChart.swift */; };
+		87CCEBC329A16B5400430C58 /* EndPoint+CoinGecko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBC229A16B5400430C58 /* EndPoint+CoinGecko.swift */; };
+		87CCEBC529A16B9500430C58 /* Entities+CoinGecko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBC429A16B9500430C58 /* Entities+CoinGecko.swift */; };
+		87CCEBCC29A16C1100430C58 /* CoinGeckoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBCB29A16C1100430C58 /* CoinGeckoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +86,12 @@
 		87CCEBB429A15C0400430C58 /* DecodableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableMock.swift; sourceTree = "<group>"; };
 		87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 		87CCEBB829A15F8200430C58 /* URLComponents+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+TestData.swift"; sourceTree = "<group>"; };
+		87CCEBBC29A16AA600430C58 /* CoinGecko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGecko.swift; sourceTree = "<group>"; };
+		87CCEBBE29A16B0600430C58 /* FetchMarkets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMarkets.swift; sourceTree = "<group>"; };
+		87CCEBC029A16B3400430C58 /* FetchChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChart.swift; sourceTree = "<group>"; };
+		87CCEBC229A16B5400430C58 /* EndPoint+CoinGecko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EndPoint+CoinGecko.swift"; sourceTree = "<group>"; };
+		87CCEBC429A16B9500430C58 /* Entities+CoinGecko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entities+CoinGecko.swift"; sourceTree = "<group>"; };
+		87CCEBCB29A16C1100430C58 /* CoinGeckoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,7 @@
 		87B9816729A059C5004C9225 /* Floww */ = {
 			isa = PBXGroup;
 			children = (
+				87CCEBBB29A16A9200430C58 /* CoinGecko */,
 				87B9819229A05ADA004C9225 /* Entities */,
 				87CCEBA529A156AF00430C58 /* Networking */,
 				87B9816829A059C5004C9225 /* FlowwApp.swift */,
@@ -151,6 +164,7 @@
 		87B9817829A059C7004C9225 /* FlowwTests */ = {
 			isa = PBXGroup;
 			children = (
+				87CCEBC829A16BED00430C58 /* CoinGecko */,
 				87B9819729A05AF6004C9225 /* Entities */,
 				87CCEBAD29A1594900430C58 /* Mocks */,
 				87CCEBAA29A1592100430C58 /* Networking */,
@@ -227,6 +241,26 @@
 				87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		87CCEBBB29A16A9200430C58 /* CoinGecko */ = {
+			isa = PBXGroup;
+			children = (
+				87CCEBBC29A16AA600430C58 /* CoinGecko.swift */,
+				87CCEBC229A16B5400430C58 /* EndPoint+CoinGecko.swift */,
+				87CCEBC429A16B9500430C58 /* Entities+CoinGecko.swift */,
+				87CCEBC029A16B3400430C58 /* FetchChart.swift */,
+				87CCEBBE29A16B0600430C58 /* FetchMarkets.swift */,
+			);
+			path = CoinGecko;
+			sourceTree = "<group>";
+		};
+		87CCEBC829A16BED00430C58 /* CoinGecko */ = {
+			isa = PBXGroup;
+			children = (
+				87CCEBCB29A16C1100430C58 /* CoinGeckoTests.swift */,
+			);
+			path = CoinGecko;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,12 +395,17 @@
 			files = (
 				87B9819E29A05BD2004C9225 /* Currency.swift in Sources */,
 				87B9819D29A05BD2004C9225 /* Interval.swift in Sources */,
+				87CCEBBF29A16B0600430C58 /* FetchMarkets.swift in Sources */,
 				87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */,
+				87CCEBBD29A16AA700430C58 /* CoinGecko.swift in Sources */,
 				87B981A029A05BD2004C9225 /* Order.swift in Sources */,
 				87B9819629A05AF0004C9225 /* Chart.swift in Sources */,
 				87B9816B29A059C5004C9225 /* ContentView.swift in Sources */,
 				87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */,
+				87CCEBC329A16B5400430C58 /* EndPoint+CoinGecko.swift in Sources */,
+				87CCEBC129A16B3400430C58 /* FetchChart.swift in Sources */,
 				87B9816929A059C5004C9225 /* FlowwApp.swift in Sources */,
+				87CCEBC529A16B9500430C58 /* Entities+CoinGecko.swift in Sources */,
 				87B9819429A05AEB004C9225 /* Market.swift in Sources */,
 				87B9819F29A05BD2004C9225 /* Period.swift in Sources */,
 			);
@@ -384,6 +423,7 @@
 				87CCEBAF29A1596100430C58 /* EndPointMock.swift in Sources */,
 				87CCEBB929A15F8200430C58 /* URLComponents+TestData.swift in Sources */,
 				87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */,
+				87CCEBCC29A16C1100430C58 /* CoinGeckoTests.swift in Sources */,
 				87B9817A29A059C7004C9225 /* FlowwTests.swift in Sources */,
 				87B981A829A05C43004C9225 /* Chart+TestData.swift in Sources */,
 				87B981A429A05BF7004C9225 /* MarketTests.swift in Sources */,
