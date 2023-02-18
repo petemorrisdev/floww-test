@@ -24,6 +24,14 @@
 		87B981A429A05BF7004C9225 /* MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A329A05BF7004C9225 /* MarketTests.swift */; };
 		87B981A629A05C3C004C9225 /* Market+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A529A05C3C004C9225 /* Market+TestData.swift */; };
 		87B981A829A05C43004C9225 /* Chart+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A729A05C43004C9225 /* Chart+TestData.swift */; };
+		87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA629A156D000430C58 /* HTTPClient.swift */; };
+		87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA829A1573B00430C58 /* EndPoint.swift */; };
+		87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBAB29A1593700430C58 /* EndPointTests.swift */; };
+		87CCEBAF29A1596100430C58 /* EndPointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBAE29A1596100430C58 /* EndPointMock.swift */; };
+		87CCEBB329A15B7000430C58 /* HTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBB229A15B7000430C58 /* HTTPClientTests.swift */; };
+		87CCEBB529A15C0400430C58 /* DecodableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBB429A15C0400430C58 /* DecodableMock.swift */; };
+		87CCEBB729A15D5D00430C58 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */; };
+		87CCEBB929A15F8200430C58 /* URLComponents+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBB829A15F8200430C58 /* URLComponents+TestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +72,14 @@
 		87B981A329A05BF7004C9225 /* MarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTests.swift; sourceTree = "<group>"; };
 		87B981A529A05C3C004C9225 /* Market+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Market+TestData.swift"; sourceTree = "<group>"; };
 		87B981A729A05C43004C9225 /* Chart+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+TestData.swift"; sourceTree = "<group>"; };
+		87CCEBA629A156D000430C58 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		87CCEBA829A1573B00430C58 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		87CCEBAB29A1593700430C58 /* EndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTests.swift; sourceTree = "<group>"; };
+		87CCEBAE29A1596100430C58 /* EndPointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointMock.swift; sourceTree = "<group>"; };
+		87CCEBB229A15B7000430C58 /* HTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientTests.swift; sourceTree = "<group>"; };
+		87CCEBB429A15C0400430C58 /* DecodableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableMock.swift; sourceTree = "<group>"; };
+		87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		87CCEBB829A15F8200430C58 /* URLComponents+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+TestData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				87B9819229A05ADA004C9225 /* Entities */,
+				87CCEBA529A156AF00430C58 /* Networking */,
 				87B9816829A059C5004C9225 /* FlowwApp.swift */,
 				87B9816A29A059C5004C9225 /* ContentView.swift */,
 				87B9816C29A059C7004C9225 /* Assets.xcassets */,
@@ -134,8 +151,10 @@
 		87B9817829A059C7004C9225 /* FlowwTests */ = {
 			isa = PBXGroup;
 			children = (
-				87B9819829A05AFE004C9225 /* Test Data */,
 				87B9819729A05AF6004C9225 /* Entities */,
+				87CCEBAD29A1594900430C58 /* Mocks */,
+				87CCEBAA29A1592100430C58 /* Networking */,
+				87B9819829A05AFE004C9225 /* Test Data */,
 				87B9817929A059C7004C9225 /* FlowwTests.swift */,
 			);
 			path = FlowwTests;
@@ -177,8 +196,37 @@
 			children = (
 				87B981A529A05C3C004C9225 /* Market+TestData.swift */,
 				87B981A729A05C43004C9225 /* Chart+TestData.swift */,
+				87CCEBB829A15F8200430C58 /* URLComponents+TestData.swift */,
 			);
 			path = "Test Data";
+			sourceTree = "<group>";
+		};
+		87CCEBA529A156AF00430C58 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				87CCEBA829A1573B00430C58 /* EndPoint.swift */,
+				87CCEBA629A156D000430C58 /* HTTPClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		87CCEBAA29A1592100430C58 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				87CCEBAB29A1593700430C58 /* EndPointTests.swift */,
+				87CCEBB229A15B7000430C58 /* HTTPClientTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		87CCEBAD29A1594900430C58 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				87CCEBB429A15C0400430C58 /* DecodableMock.swift */,
+				87CCEBAE29A1596100430C58 /* EndPointMock.swift */,
+				87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,9 +361,11 @@
 			files = (
 				87B9819E29A05BD2004C9225 /* Currency.swift in Sources */,
 				87B9819D29A05BD2004C9225 /* Interval.swift in Sources */,
+				87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */,
 				87B981A029A05BD2004C9225 /* Order.swift in Sources */,
 				87B9819629A05AF0004C9225 /* Chart.swift in Sources */,
 				87B9816B29A059C5004C9225 /* ContentView.swift in Sources */,
+				87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */,
 				87B9816929A059C5004C9225 /* FlowwApp.swift in Sources */,
 				87B9819429A05AEB004C9225 /* Market.swift in Sources */,
 				87B9819F29A05BD2004C9225 /* Period.swift in Sources */,
@@ -326,8 +376,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87CCEBB729A15D5D00430C58 /* URLSessionMock.swift in Sources */,
 				87B981A229A05BEB004C9225 /* ChartTests.swift in Sources */,
+				87CCEBB529A15C0400430C58 /* DecodableMock.swift in Sources */,
 				87B981A629A05C3C004C9225 /* Market+TestData.swift in Sources */,
+				87CCEBB329A15B7000430C58 /* HTTPClientTests.swift in Sources */,
+				87CCEBAF29A1596100430C58 /* EndPointMock.swift in Sources */,
+				87CCEBB929A15F8200430C58 /* URLComponents+TestData.swift in Sources */,
+				87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */,
 				87B9817A29A059C7004C9225 /* FlowwTests.swift in Sources */,
 				87B981A829A05C43004C9225 /* Chart+TestData.swift in Sources */,
 				87B981A429A05BF7004C9225 /* MarketTests.swift in Sources */,
