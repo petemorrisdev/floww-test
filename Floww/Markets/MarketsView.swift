@@ -7,18 +7,12 @@ struct MarketsView: View {
         static let imageSize = 40.0
     }
     
-    // We probably want a another struct called Markets to have the
-    // responsibility for this array, and managing view state.
-    // Will see what kind of logic is required as the shape of
-    // this View code progresses
-    //
-    // TODO: Move this into a `Markets` struct which manages view state
-    @State var cells: [MarketsCell]
+    @State var markets: Markets
     
     // MARK: List
     
     var body: some View {
-        List(cells) { cell in
+        List(markets.cells) { cell in
             
             switch cell {
             case .loading:
@@ -34,8 +28,14 @@ struct MarketsView: View {
             }
             
         }
+        .task {
+            await markets.fetch()
+        }
+        .refreshable {
+            await markets.fetch()
+        }
         .listStyle(.plain)
-        .animation(.linear, value: cells)
+        .animation(.linear, value: markets.cells)
     }
     
     // MARK: LoadingView
@@ -141,7 +141,7 @@ struct MarketsView: View {
 #if DEBUG
 struct MarketsView_Previews: PreviewProvider {
     static var previews: some View {
-        MarketsView(cells: LocalizedMarket.previewData.map(MarketsCell.market))
+        MarketsView(markets: Markets(store: MarketsStorePreview()))
     }
 }
 #endif
