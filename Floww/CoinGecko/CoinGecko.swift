@@ -4,6 +4,12 @@ enum CoinGecko {
     static let scheme = "https"
     static let host = "api.coingecko.com"
     
+    static let jsonDecoder: JSONDecoder = {
+        var decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
+    
     enum Path {
         static let markets = "/api/v3/coins/markets"
         static func marketChart(id: String) -> String { "/api/v3/coins/\(id)/market_chart" }

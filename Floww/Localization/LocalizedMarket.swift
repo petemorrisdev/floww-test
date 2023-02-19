@@ -1,6 +1,6 @@
 import Foundation
 
-struct LocalizedMarket {
+struct LocalizedMarket: Equatable, Identifiable {
     let id: String
     let image: URL
     let rank: String

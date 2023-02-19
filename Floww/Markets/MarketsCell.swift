@@ -12,6 +12,9 @@ enum MarketsCell: Identifiable, Equatable {
     }
     
     static func == (lhs: Self, rhs: Self) -> Bool {
-        lhs.id == rhs.id
+        switch (lhs, rhs) {
+        case (.loading, .loading): return true
+        default: return lhs.id == rhs.id
+        }
     }
 }

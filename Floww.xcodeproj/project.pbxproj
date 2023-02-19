@@ -11,7 +11,6 @@
 		87B9816B29A059C5004C9225 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9816A29A059C5004C9225 /* ContentView.swift */; };
 		87B9816D29A059C7004C9225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B9816C29A059C7004C9225 /* Assets.xcassets */; };
 		87B9817029A059C7004C9225 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B9816F29A059C7004C9225 /* Preview Assets.xcassets */; };
-		87B9817A29A059C7004C9225 /* FlowwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9817929A059C7004C9225 /* FlowwTests.swift */; };
 		87B9818429A059C7004C9225 /* FlowwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9818329A059C7004C9225 /* FlowwUITests.swift */; };
 		87B9818629A059C7004C9225 /* FlowwUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9818529A059C7004C9225 /* FlowwUITestsLaunchTests.swift */; };
 		87B9819429A05AEB004C9225 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9819329A05AEB004C9225 /* Market.swift */; };
@@ -48,6 +47,17 @@
 		87CCEBE129A1871E00430C58 /* MarketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBE029A1871E00430C58 /* MarketsView.swift */; };
 		87CCEBE429A18DCE00430C58 /* LocalizedMarket+PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBE329A18DCE00430C58 /* LocalizedMarket+PreviewData.swift */; };
 		87CCEBE629A18FE300430C58 /* MarketsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBE529A18FE300430C58 /* MarketsCell.swift */; };
+		87CCEBE829A192B200430C58 /* Markets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBE729A192B200430C58 /* Markets.swift */; };
+		87CCEBEA29A193C800430C58 /* MarketsStorePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBE929A193C800430C58 /* MarketsStorePreview.swift */; };
+		87CCEBEF29A2362400430C58 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBEE29A2362400430C58 /* Store.swift */; };
+		87CCEBF129A2367500430C58 /* CoinGeckoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBF029A2367500430C58 /* CoinGeckoAPI.swift */; };
+		87CCEBF329A2386E00430C58 /* CoinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBF229A2386E00430C58 /* CoinAPI.swift */; };
+		87CCEBF629A23AC900430C58 /* MarketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBF529A23AC900430C58 /* MarketsTests.swift */; };
+		87CCEBF829A23C3F00430C58 /* MarketsStoreMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBF729A23C3F00430C58 /* MarketsStoreMock.swift */; };
+		87CCEBFA29A23DB000430C58 /* CoinGeckAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBF929A23DB000430C58 /* CoinGeckAPITests.swift */; };
+		87CCEBFC29A23E7B00430C58 /* HTTPClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBFB29A23E7B00430C58 /* HTTPClientMock.swift */; };
+		87CCEBFE29A2411700430C58 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBFD29A2411700430C58 /* StoreTests.swift */; };
+		87CCEC0029A2414B00430C58 /* CoinAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBFF29A2414B00430C58 /* CoinAPIMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +84,6 @@
 		87B9816C29A059C7004C9225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87B9816F29A059C7004C9225 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87B9817529A059C7004C9225 /* FlowwTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowwTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		87B9817929A059C7004C9225 /* FlowwTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowwTests.swift; sourceTree = "<group>"; };
 		87B9817F29A059C7004C9225 /* FlowwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B9818329A059C7004C9225 /* FlowwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowwUITests.swift; sourceTree = "<group>"; };
 		87B9818529A059C7004C9225 /* FlowwUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowwUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -112,6 +121,17 @@
 		87CCEBE029A1871E00430C58 /* MarketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsView.swift; sourceTree = "<group>"; };
 		87CCEBE329A18DCE00430C58 /* LocalizedMarket+PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedMarket+PreviewData.swift"; sourceTree = "<group>"; };
 		87CCEBE529A18FE300430C58 /* MarketsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsCell.swift; sourceTree = "<group>"; };
+		87CCEBE729A192B200430C58 /* Markets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markets.swift; sourceTree = "<group>"; };
+		87CCEBE929A193C800430C58 /* MarketsStorePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsStorePreview.swift; sourceTree = "<group>"; };
+		87CCEBEE29A2362400430C58 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		87CCEBF029A2367500430C58 /* CoinGeckoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckoAPI.swift; sourceTree = "<group>"; };
+		87CCEBF229A2386E00430C58 /* CoinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPI.swift; sourceTree = "<group>"; };
+		87CCEBF529A23AC900430C58 /* MarketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsTests.swift; sourceTree = "<group>"; };
+		87CCEBF729A23C3F00430C58 /* MarketsStoreMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsStoreMock.swift; sourceTree = "<group>"; };
+		87CCEBF929A23DB000430C58 /* CoinGeckAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinGeckAPITests.swift; sourceTree = "<group>"; };
+		87CCEBFB29A23E7B00430C58 /* HTTPClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientMock.swift; sourceTree = "<group>"; };
+		87CCEBFD29A2411700430C58 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		87CCEBFF29A2414B00430C58 /* CoinAPIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +190,7 @@
 				87CCEBE229A18DA400430C58 /* PreviewData */,
 				87B9816829A059C5004C9225 /* FlowwApp.swift */,
 				87B9816A29A059C5004C9225 /* ContentView.swift */,
+				87CCEBEE29A2362400430C58 /* Store.swift */,
 				87B9816C29A059C7004C9225 /* Assets.xcassets */,
 				87B9816E29A059C7004C9225 /* Preview Content */,
 			);
@@ -193,7 +214,8 @@
 				87CCEBAD29A1594900430C58 /* Mocks */,
 				87CCEBAA29A1592100430C58 /* Networking */,
 				87B9819829A05AFE004C9225 /* Test Data */,
-				87B9817929A059C7004C9225 /* FlowwTests.swift */,
+				87CCEBF429A23ABB00430C58 /* Markets */,
+				87CCEBFD29A2411700430C58 /* StoreTests.swift */,
 			);
 			path = FlowwTests;
 			sourceTree = "<group>";
@@ -242,6 +264,7 @@
 		87CCEBA529A156AF00430C58 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				87CCEBF229A2386E00430C58 /* CoinAPI.swift */,
 				87CCEBA829A1573B00430C58 /* EndPoint.swift */,
 				87CCEBA629A156D000430C58 /* HTTPClient.swift */,
 			);
@@ -262,7 +285,10 @@
 			children = (
 				87CCEBB429A15C0400430C58 /* DecodableMock.swift */,
 				87CCEBAE29A1596100430C58 /* EndPointMock.swift */,
+				87CCEBFB29A23E7B00430C58 /* HTTPClientMock.swift */,
 				87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */,
+				87CCEBF729A23C3F00430C58 /* MarketsStoreMock.swift */,
+				87CCEBFF29A2414B00430C58 /* CoinAPIMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -271,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				87CCEBBC29A16AA600430C58 /* CoinGecko.swift */,
+				87CCEBF029A2367500430C58 /* CoinGeckoAPI.swift */,
 				87CCEBC229A16B5400430C58 /* EndPoint+CoinGecko.swift */,
 				87CCEBC429A16B9500430C58 /* Entities+CoinGecko.swift */,
 				87CCEBC029A16B3400430C58 /* FetchChart.swift */,
@@ -283,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				87CCEBCB29A16C1100430C58 /* CoinGeckoTests.swift */,
+				87CCEBF929A23DB000430C58 /* CoinGeckAPITests.swift */,
 			);
 			path = CoinGecko;
 			sourceTree = "<group>";
@@ -311,6 +339,7 @@
 		87CCEBDD29A186DA00430C58 /* Markets */ = {
 			isa = PBXGroup;
 			children = (
+				87CCEBE729A192B200430C58 /* Markets.swift */,
 				87CCEBE029A1871E00430C58 /* MarketsView.swift */,
 				87CCEBE529A18FE300430C58 /* MarketsCell.swift */,
 			);
@@ -321,8 +350,17 @@
 			isa = PBXGroup;
 			children = (
 				87CCEBE329A18DCE00430C58 /* LocalizedMarket+PreviewData.swift */,
+				87CCEBE929A193C800430C58 /* MarketsStorePreview.swift */,
 			);
 			path = PreviewData;
+			sourceTree = "<group>";
+		};
+		87CCEBF429A23ABB00430C58 /* Markets */ = {
+			isa = PBXGroup;
+			children = (
+				87CCEBF529A23AC900430C58 /* MarketsTests.swift */,
+			);
+			path = Markets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,16 +497,21 @@
 				87CCEBE429A18DCE00430C58 /* LocalizedMarket+PreviewData.swift in Sources */,
 				87B9819D29A05BD2004C9225 /* Interval.swift in Sources */,
 				87CCEBBF29A16B0600430C58 /* FetchMarkets.swift in Sources */,
+				87CCEBE829A192B200430C58 /* Markets.swift in Sources */,
+				87CCEBEF29A2362400430C58 /* Store.swift in Sources */,
 				87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */,
 				87CCEBBD29A16AA700430C58 /* CoinGecko.swift in Sources */,
 				87B981A029A05BD2004C9225 /* Order.swift in Sources */,
 				87B9819629A05AF0004C9225 /* Chart.swift in Sources */,
+				87CCEBF329A2386E00430C58 /* CoinAPI.swift in Sources */,
 				87B9816B29A059C5004C9225 /* ContentView.swift in Sources */,
+				87CCEBF129A2367500430C58 /* CoinGeckoAPI.swift in Sources */,
 				87CCEBE629A18FE300430C58 /* MarketsCell.swift in Sources */,
 				87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */,
 				87CCEBD329A17A2E00430C58 /* NumberFormatter+Constants.swift in Sources */,
 				87CCEBC329A16B5400430C58 /* EndPoint+CoinGecko.swift in Sources */,
 				87CCEBC129A16B3400430C58 /* FetchChart.swift in Sources */,
+				87CCEBEA29A193C800430C58 /* MarketsStorePreview.swift in Sources */,
 				87CCEBCF29A1793500430C58 /* LocalizedMarket.swift in Sources */,
 				87B9816929A059C5004C9225 /* FlowwApp.swift in Sources */,
 				87CCEBE129A1871E00430C58 /* MarketsView.swift in Sources */,
@@ -487,15 +530,20 @@
 				87CCEBB729A15D5D00430C58 /* URLSessionMock.swift in Sources */,
 				87B981A229A05BEB004C9225 /* ChartTests.swift in Sources */,
 				87CCEBB529A15C0400430C58 /* DecodableMock.swift in Sources */,
+				87CCEBFE29A2411700430C58 /* StoreTests.swift in Sources */,
 				87B981A629A05C3C004C9225 /* Market+TestData.swift in Sources */,
 				87CCEBB329A15B7000430C58 /* HTTPClientTests.swift in Sources */,
 				87CCEBAF29A1596100430C58 /* EndPointMock.swift in Sources */,
 				87CCEBB929A15F8200430C58 /* URLComponents+TestData.swift in Sources */,
+				87CCEBF629A23AC900430C58 /* MarketsTests.swift in Sources */,
 				87CCEBDC29A1825F00430C58 /* NumberFormatterTests.swift in Sources */,
 				87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */,
 				87CCEBCC29A16C1100430C58 /* CoinGeckoTests.swift in Sources */,
-				87B9817A29A059C7004C9225 /* FlowwTests.swift in Sources */,
 				87B981A829A05C43004C9225 /* Chart+TestData.swift in Sources */,
+				87CCEC0029A2414B00430C58 /* CoinAPIMock.swift in Sources */,
+				87CCEBFA29A23DB000430C58 /* CoinGeckAPITests.swift in Sources */,
+				87CCEBFC29A23E7B00430C58 /* HTTPClientMock.swift in Sources */,
+				87CCEBF829A23C3F00430C58 /* MarketsStoreMock.swift in Sources */,
 				87B981A429A05BF7004C9225 /* MarketTests.swift in Sources */,
 				87CCEBD629A17EF100430C58 /* MarketFormatterTests.swift in Sources */,
 				87CCEBDA29A1820600430C58 /* IntExtensionTests.swift in Sources */,
