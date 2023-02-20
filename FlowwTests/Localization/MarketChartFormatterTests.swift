@@ -1,4 +1,5 @@
 import XCTest
+import SwiftUI
 @testable import Floww
 
 final class MarketChartFormatterTests: XCTestCase {
