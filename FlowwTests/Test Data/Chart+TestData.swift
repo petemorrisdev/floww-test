@@ -1,7 +1,7 @@
 import Foundation
 @testable import Floww
 
-extension Chart {
+extension MarketChart {
     static let testData = """
     {
       "prices": [

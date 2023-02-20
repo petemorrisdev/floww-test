@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct FlowwApp: App {
+    @Environment(\.factory) var factory
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationSplitView {
+                MarketsView(
+                    markets: factory.makeMarkets()
+                )
+                .navigationTitle("Markets")
+                .navigationBarTitleDisplayMode(.inline)
+            } detail: {
+                EmptyView()
+            }
         }
     }
 }

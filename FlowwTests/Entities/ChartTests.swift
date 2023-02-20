@@ -9,11 +9,11 @@ final class ChartTests: XCTestCase {
     override func setUp() {
         jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
-        chartData = Chart.testData
+        chartData = MarketChart.testData
     }
     
     func test_decodeChart() throws {
-        let market = try jsonDecoder.decode(Chart.self, from: chartData)
+        let market = try jsonDecoder.decode(MarketChart.self, from: chartData)
         XCTAssertNotNil(market)
     }
 

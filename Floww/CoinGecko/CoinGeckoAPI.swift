@@ -13,4 +13,15 @@ struct CoinGeckoAPI: CoinAPI {
         )
     }
     
+    func fetchMarketChart(id: String, currency: Currency, period: Period, interval: Interval) async throws -> MarketChart {
+        try await http.get(
+            urlComponents: CoinGecko.FetchMarketChart(
+                coinID: id,
+                currency: currency,
+                days: period,
+                interval: interval
+            ).urlComponents
+        )
+    }
+    
 }

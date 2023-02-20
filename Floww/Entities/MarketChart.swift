@@ -1,5 +1,5 @@
 import Foundation
 
-struct Chart: Decodable {
+struct MarketChart: Decodable {
     let prices: [[Double]]
 }
