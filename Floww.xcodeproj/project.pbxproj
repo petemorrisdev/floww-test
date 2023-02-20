@@ -69,6 +69,7 @@
 		87CCEC2029A2E27D00430C58 /* MarketDetailStorePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC1F29A2E27D00430C58 /* MarketDetailStorePreview.swift */; };
 		87CCEC2229A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2129A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift */; };
 		87CCEC2629A2E4B600430C58 /* MarketDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2529A2E4B600430C58 /* MarketDetailTests.swift */; };
+		87CCEC2829A38C5700430C58 /* HTTPError+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2729A38C5700430C58 /* HTTPError+Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,7 @@
 		87CCEC1F29A2E27D00430C58 /* MarketDetailStorePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailStorePreview.swift; sourceTree = "<group>"; };
 		87CCEC2129A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedMarketChart+PreviewData.swift"; sourceTree = "<group>"; };
 		87CCEC2529A2E4B600430C58 /* MarketDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailTests.swift; sourceTree = "<group>"; };
+		87CCEC2729A38C5700430C58 /* HTTPError+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPError+Localization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +348,7 @@
 				87CCEBD729A1815D00430C58 /* Int+Billions.swift */,
 				87CCEBCE29A1793500430C58 /* LocalizedMarket.swift */,
 				87CCEC0829A2A0D700430C58 /* LocalizedMarketChart.swift */,
+				87CCEC2729A38C5700430C58 /* HTTPError+Localization.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				87CCEBF129A2367500430C58 /* CoinGeckoAPI.swift in Sources */,
 				87CCEC0929A2A0D700430C58 /* LocalizedMarketChart.swift in Sources */,
 				87CCEBE629A18FE300430C58 /* MarketsCell.swift in Sources */,
+				87CCEC2829A38C5700430C58 /* HTTPError+Localization.swift in Sources */,
 				87CCEC1629A2AA5A00430C58 /* Environment+Factory.swift in Sources */,
 				87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */,
 				87CCEBD329A17A2E00430C58 /* NumberFormatter+Constants.swift in Sources */,

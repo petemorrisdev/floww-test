@@ -21,6 +21,7 @@ struct Markets {
             .map(MarketsCell.market)
         } catch {
             // TODO: Error handling: https://github.com/petemorrisdev/floww-test/issues/15
+            print(error)
         }
     }
 }
