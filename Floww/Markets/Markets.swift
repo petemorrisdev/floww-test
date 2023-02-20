@@ -28,4 +28,5 @@ struct Markets {
             errorMessage = error.localizedDescription
         }
     }
+
 }

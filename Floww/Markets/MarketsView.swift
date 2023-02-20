@@ -8,11 +8,16 @@ struct MarketsView: View {
     
     @Environment(\.factory) var factory
     @State var markets: Markets
+    @State private var searchText = ""
+    
+    private var searchResults: [MarketsCell] {
+        markets.cells.filter(prefix: searchText)
+    }
     
     // MARK: List
     
     var body: some View {
-        List(markets.cells) { cell in
+        List(searchResults) { cell in
             
             switch cell {
             case .loading:
@@ -49,8 +54,9 @@ struct MarketsView: View {
             await markets.fetch()
         }
         .listStyle(.plain)
-        .animation(.linear, value: markets.cells)
+        .animation(.linear, value: searchResults)
         .errorBanner(message: markets.errorMessage)
+        .searchable(text: $searchText)
     }
     
     // MARK: LoadingView
