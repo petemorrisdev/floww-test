@@ -24,6 +24,7 @@
 		87B981A629A05C3C004C9225 /* Market+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A529A05C3C004C9225 /* Market+TestData.swift */; };
 		87B981A829A05C43004C9225 /* Chart+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A729A05C43004C9225 /* Chart+TestData.swift */; };
 		87C14D1C29A3A137002FCB0B /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */; };
+		87C14D1E29A3B03D002FCB0B /* HTTPError+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D1D29A3B03D002FCB0B /* HTTPError+Localization.swift */; };
 		87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA629A156D000430C58 /* HTTPClient.swift */; };
 		87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA829A1573B00430C58 /* EndPoint.swift */; };
 		87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBAB29A1593700430C58 /* EndPointTests.swift */; };
@@ -113,6 +114,7 @@
 		87B981A529A05C3C004C9225 /* Market+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Market+TestData.swift"; sourceTree = "<group>"; };
 		87B981A729A05C43004C9225 /* Chart+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+TestData.swift"; sourceTree = "<group>"; };
 		87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
+		87C14D1D29A3B03D002FCB0B /* HTTPError+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPError+Localization.swift"; sourceTree = "<group>"; };
 		87CCEBA629A156D000430C58 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		87CCEBA829A1573B00430C58 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		87CCEBAB29A1593700430C58 /* EndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTests.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				87CCEC1729A2CD7A00430C58 /* Formatters */,
+				87C14D1D29A3B03D002FCB0B /* HTTPError+Localization.swift */,
 				87CCEBD729A1815D00430C58 /* Int+Billions.swift */,
 				87CCEBCE29A1793500430C58 /* LocalizedMarket.swift */,
 				87CCEC0829A2A0D700430C58 /* LocalizedMarketChart.swift */,
@@ -595,6 +598,7 @@
 				87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */,
 				87CCEBBD29A16AA700430C58 /* CoinGecko.swift in Sources */,
 				87B981A029A05BD2004C9225 /* Order.swift in Sources */,
+				87C14D1E29A3B03D002FCB0B /* HTTPError+Localization.swift in Sources */,
 				87CCEC2029A2E27D00430C58 /* MarketDetailStorePreview.swift in Sources */,
 				87B9819629A05AF0004C9225 /* MarketChart.swift in Sources */,
 				87CCEBF329A2386E00430C58 /* CoinAPI.swift in Sources */,
