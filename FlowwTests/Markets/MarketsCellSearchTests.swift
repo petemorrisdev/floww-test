@@ -29,6 +29,13 @@ final class MarketCellSearchTests: XCTestCase {
         )
     }
     
+    func test_filterByPrefix_ignoresEmptySearchString() {
+        XCTAssertEqual(
+            cells.filter(prefix: ""),
+            cells
+        )
+    }
+    
     private func makeMarketCell(symbol: String) -> MarketsCell {
         MarketsCell.market(
             LocalizedMarket(
