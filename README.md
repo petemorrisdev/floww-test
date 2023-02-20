@@ -37,6 +37,10 @@ Here's a screenshot of the tests I ran manually before merging the final PR:
 
 ## iPhone Demo Video
 
+I've shown an example of hitting a rate limit error and getting throttled in the below video
+
+Once that happens, if you skip through to the end you can see me refresh the app, get the data, and hide the error (it takes a couople of mins for the rate limit to clear, and it's not exactly fun to watch that part 😅):
+
 https://user-images.githubusercontent.com/125687596/220144640-ca9f788a-fd7d-42fd-b40a-459ffcad1199.mov
 
 ## iPad Demo Video
