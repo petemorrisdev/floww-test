@@ -71,17 +71,17 @@ struct MarketDetailView: View {
                     
                     Text(market.symbol)
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                         .font(.title3.bold())
                     
                     Text(market.price)
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                         .font(.subheadline)
                     
                     Text(date)
                         .multilineTextAlignment(.leading)
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                         .font(.subheadline)
                 }
             }
