@@ -108,7 +108,7 @@ struct MarketDetailView: View {
         
         var body: some View {
             Spacer()
-            Button("Refresh", action: action)
+            Button(.retry, action: action)
                 .frame(minWidth: .zero, maxWidth: .infinity)
             Spacer()
         }

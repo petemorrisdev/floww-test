@@ -12,8 +12,8 @@ struct MarketChartFormatter {
         }
         
         return LocalizedMarketChart.Mark(
-            xLabel: "Date",
-            yLabel: "Price",
+            xLabel: .date,
+            yLabel: .price,
             date: Date(timeIntervalSince1970: timestamp / 1000),
             price: price
         )
