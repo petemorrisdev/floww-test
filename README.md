@@ -25,13 +25,13 @@ Here's the finished task list:
 - [x] Loading states
 - [x] Error states
 - [x] Unit tests
-- [] Chart drag gesture
-- [] Chart period control
-- [] UI tests (Not specifically mentioned in the PDF. However, unit test coverage is good)
+- [ ] Chart drag gesture
+- [ ] Chart period control
+- [ ] UI tests (Not specifically mentioned in the PDF. However, unit test coverage is good)
 
 I ran out of Bitrise credits before I finished, so any leftover CI jobs are on hold.
 
-Here's a screenshot of the tests I ran manuall beore merging the final PR:
+Here's a screenshot of the tests I ran manually before merging the final PR:
 
 <img width="418" alt="Screenshot 2023-02-20 at 3 34 34 PM" src="https://user-images.githubusercontent.com/125687596/220147956-732eb455-bb26-4412-8fa6-82d7ab5fa65b.png">
 
@@ -65,9 +65,7 @@ For example, it should be possible to add a feature such as caching without disr
 
 I came up with a rough architecture as below (which I stuck to for the most part when implementing this).
 
-**Note:** - some of the bits on this diagram are *only for illustration*.
-
-I wanted to show where certain features may fit in the future (there's no caching in the final code, for example):
+**Note:** Some of the bits on this diagram are for illustrationn only. I wanted to show where certain features may fit in the future (there's no caching in the final code, for example):
 
 <img width="710" alt="Screenshot 2023-02-20 at 3 53 26 PM" src="https://user-images.githubusercontent.com/125687596/220152082-bb50953a-4479-46eb-82bf-a07a6fb5cf14.png">
 
