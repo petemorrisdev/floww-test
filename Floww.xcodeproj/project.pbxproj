@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		878C501D29A3A038000ABCD6 /* MarketDetailStoreMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878C501C29A3A038000ABCD6 /* MarketDetailStoreMock.swift */; };
 		87B9816929A059C5004C9225 /* FlowwApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9816829A059C5004C9225 /* FlowwApp.swift */; };
 		87B9816D29A059C7004C9225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B9816C29A059C7004C9225 /* Assets.xcassets */; };
 		87B9817029A059C7004C9225 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B9816F29A059C7004C9225 /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		87B981A429A05BF7004C9225 /* MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A329A05BF7004C9225 /* MarketTests.swift */; };
 		87B981A629A05C3C004C9225 /* Market+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A529A05C3C004C9225 /* Market+TestData.swift */; };
 		87B981A829A05C43004C9225 /* Chart+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A729A05C43004C9225 /* Chart+TestData.swift */; };
+		87C14D1C29A3A137002FCB0B /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */; };
 		87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA629A156D000430C58 /* HTTPClient.swift */; };
 		87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA829A1573B00430C58 /* EndPoint.swift */; };
 		87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBAB29A1593700430C58 /* EndPointTests.swift */; };
@@ -69,7 +71,8 @@
 		87CCEC2029A2E27D00430C58 /* MarketDetailStorePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC1F29A2E27D00430C58 /* MarketDetailStorePreview.swift */; };
 		87CCEC2229A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2129A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift */; };
 		87CCEC2629A2E4B600430C58 /* MarketDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2529A2E4B600430C58 /* MarketDetailTests.swift */; };
-		87CCEC2829A38C5700430C58 /* HTTPError+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2729A38C5700430C58 /* HTTPError+Localization.swift */; };
+		87CCEC2829A38C5700430C58 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		87CCEC2A29A3907B00430C58 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		878C501C29A3A038000ABCD6 /* MarketDetailStoreMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailStoreMock.swift; sourceTree = "<group>"; };
 		87B9816529A059C5004C9225 /* Floww.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floww.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B9816829A059C5004C9225 /* FlowwApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowwApp.swift; sourceTree = "<group>"; };
 		87B9816C29A059C7004C9225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		87B981A329A05BF7004C9225 /* MarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTests.swift; sourceTree = "<group>"; };
 		87B981A529A05C3C004C9225 /* Market+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Market+TestData.swift"; sourceTree = "<group>"; };
 		87B981A729A05C43004C9225 /* Chart+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+TestData.swift"; sourceTree = "<group>"; };
+		87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
 		87CCEBA629A156D000430C58 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		87CCEBA829A1573B00430C58 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		87CCEBAB29A1593700430C58 /* EndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTests.swift; sourceTree = "<group>"; };
@@ -155,7 +160,6 @@
 		87CCEC1F29A2E27D00430C58 /* MarketDetailStorePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailStorePreview.swift; sourceTree = "<group>"; };
 		87CCEC2129A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedMarketChart+PreviewData.swift"; sourceTree = "<group>"; };
 		87CCEC2529A2E4B600430C58 /* MarketDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailTests.swift; sourceTree = "<group>"; };
-		87CCEC2729A38C5700430C58 /* HTTPError+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPError+Localization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +319,7 @@
 				87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */,
 				87CCEBF729A23C3F00430C58 /* MarketsStoreMock.swift */,
 				87CCEBFF29A2414B00430C58 /* CoinAPIMock.swift */,
+				878C501C29A3A038000ABCD6 /* MarketDetailStoreMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -348,7 +353,6 @@
 				87CCEBD729A1815D00430C58 /* Int+Billions.swift */,
 				87CCEBCE29A1793500430C58 /* LocalizedMarket.swift */,
 				87CCEC0829A2A0D700430C58 /* LocalizedMarketChart.swift */,
-				87CCEC2729A38C5700430C58 /* HTTPError+Localization.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -427,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				87CCEC1D29A2E04D00430C58 /* StandardImage.swift */,
+				87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -593,14 +598,16 @@
 				87CCEC2029A2E27D00430C58 /* MarketDetailStorePreview.swift in Sources */,
 				87B9819629A05AF0004C9225 /* MarketChart.swift in Sources */,
 				87CCEBF329A2386E00430C58 /* CoinAPI.swift in Sources */,
+				87C14D1C29A3A137002FCB0B /* ErrorBanner.swift in Sources */,
 				87CCEBF129A2367500430C58 /* CoinGeckoAPI.swift in Sources */,
 				87CCEC0929A2A0D700430C58 /* LocalizedMarketChart.swift in Sources */,
 				87CCEBE629A18FE300430C58 /* MarketsCell.swift in Sources */,
-				87CCEC2829A38C5700430C58 /* HTTPError+Localization.swift in Sources */,
+				87CCEC2829A38C5700430C58 /* (null) in Sources */,
 				87CCEC1629A2AA5A00430C58 /* Environment+Factory.swift in Sources */,
 				87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */,
 				87CCEBD329A17A2E00430C58 /* NumberFormatter+Constants.swift in Sources */,
 				87CCEBC329A16B5400430C58 /* EndPoint+CoinGecko.swift in Sources */,
+				87CCEC2A29A3907B00430C58 /* (null) in Sources */,
 				87CCEBC129A16B3400430C58 /* FetchChart.swift in Sources */,
 				87CCEBEA29A193C800430C58 /* MarketsStorePreview.swift in Sources */,
 				87CCEC1E29A2E04D00430C58 /* StandardImage.swift in Sources */,
@@ -627,6 +634,7 @@
 				87CCEBFE29A2411700430C58 /* StoreTests.swift in Sources */,
 				87CCEC2629A2E4B600430C58 /* MarketDetailTests.swift in Sources */,
 				87B981A629A05C3C004C9225 /* Market+TestData.swift in Sources */,
+				878C501D29A3A038000ABCD6 /* MarketDetailStoreMock.swift in Sources */,
 				87CCEBB329A15B7000430C58 /* HTTPClientTests.swift in Sources */,
 				87CCEBAF29A1596100430C58 /* EndPointMock.swift in Sources */,
 				87CCEBB929A15F8200430C58 /* URLComponents+TestData.swift in Sources */,
