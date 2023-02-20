@@ -2,7 +2,6 @@ import Foundation
 
 extension NumberFormatter {
     private enum Constants {
-        static let billion = "B"
         static let defaultSymbol = "$"
         static let percent = "%"
         static let rankPrefix = "#"
@@ -42,7 +41,7 @@ extension NumberFormatter {
         formatter.numberStyle = .currency
         formatter.currencySymbol = currencySymbol
         formatter.maximumFractionDigits = 1
-        formatter.positiveSuffix = Constants.billion
+        formatter.positiveSuffix = NSLocalizedString("billion", comment: "")
         return formatter
     }
 }

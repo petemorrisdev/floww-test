@@ -25,6 +25,8 @@
 		87B981A829A05C43004C9225 /* Chart+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A729A05C43004C9225 /* Chart+TestData.swift */; };
 		87C14D1C29A3A137002FCB0B /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */; };
 		87C14D1E29A3B03D002FCB0B /* HTTPError+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D1D29A3B03D002FCB0B /* HTTPError+Localization.swift */; };
+		87C14D2129A3B353002FCB0B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87C14D2329A3B353002FCB0B /* Localizable.strings */; };
+		87C14D2529A3B40D002FCB0B /* LocalizedStringKey+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D2429A3B40D002FCB0B /* LocalizedStringKey+Strings.swift */; };
 		87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA629A156D000430C58 /* HTTPClient.swift */; };
 		87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA829A1573B00430C58 /* EndPoint.swift */; };
 		87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBAB29A1593700430C58 /* EndPointTests.swift */; };
@@ -115,6 +117,8 @@
 		87B981A729A05C43004C9225 /* Chart+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+TestData.swift"; sourceTree = "<group>"; };
 		87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
 		87C14D1D29A3B03D002FCB0B /* HTTPError+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPError+Localization.swift"; sourceTree = "<group>"; };
+		87C14D2229A3B353002FCB0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		87C14D2429A3B40D002FCB0B /* LocalizedStringKey+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedStringKey+Strings.swift"; sourceTree = "<group>"; };
 		87CCEBA629A156D000430C58 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		87CCEBA829A1573B00430C58 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		87CCEBAB29A1593700430C58 /* EndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTests.swift; sourceTree = "<group>"; };
@@ -356,6 +360,8 @@
 				87CCEBD729A1815D00430C58 /* Int+Billions.swift */,
 				87CCEBCE29A1793500430C58 /* LocalizedMarket.swift */,
 				87CCEC0829A2A0D700430C58 /* LocalizedMarketChart.swift */,
+				87C14D2429A3B40D002FCB0B /* LocalizedStringKey+Strings.swift */,
+				87C14D2329A3B353002FCB0B /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B9817029A059C7004C9225 /* Preview Assets.xcassets in Resources */,
+				87C14D2129A3B353002FCB0B /* Localizable.strings in Resources */,
 				87B9816D29A059C7004C9225 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +624,7 @@
 				87CCEC1E29A2E04D00430C58 /* StandardImage.swift in Sources */,
 				87CCEBCF29A1793500430C58 /* LocalizedMarket.swift in Sources */,
 				87B9816929A059C5004C9225 /* FlowwApp.swift in Sources */,
+				87C14D2529A3B40D002FCB0B /* LocalizedStringKey+Strings.swift in Sources */,
 				87CCEC0529A29FA300430C58 /* MarketDetailView.swift in Sources */,
 				87CCEBE129A1871E00430C58 /* MarketsView.swift in Sources */,
 				87CCEBD829A1815D00430C58 /* Int+Billions.swift in Sources */,
@@ -681,6 +689,17 @@
 			targetProxy = 87B9818029A059C7004C9225 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87C14D2329A3B353002FCB0B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87C14D2229A3B353002FCB0B /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		87B9818729A059C7004C9225 /* Debug */ = {

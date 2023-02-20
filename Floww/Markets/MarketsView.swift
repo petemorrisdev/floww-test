@@ -33,7 +33,7 @@ struct MarketsView: View {
                 }
                 
             case .pullToRefresh:
-                Text("Pull to refresh 👆")
+                Text(.pullToRefresh)
                     .padding()
                     .frame(minWidth: .zero, maxWidth: .infinity)
                     .font(.headline)
