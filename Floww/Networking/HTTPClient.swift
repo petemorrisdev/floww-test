@@ -11,6 +11,10 @@ protocol URLSessionProtocol {
 extension URLSession: URLSessionProtocol {}
 
 struct HTTPClient: HTTP {
+    enum Errors: Error {
+        case unsuccessful(body: Data, status: Int)
+    }
+    
     let session: URLSessionProtocol
     let decoder: JSONDecoder
     
@@ -19,8 +23,14 @@ struct HTTPClient: HTTP {
             throw URLError(.badURL)
         }
         
-        let (data, _) = try await session.data(from: url, delegate: nil)
-        let response = try decoder.decode(Response.self, from: data)
-        return response
+        let (data, response) = try await session.data(from: url, delegate: nil)
+        let statusCode = (response as? HTTPURLResponse)?.statusCode ?? .zero
+        
+        if (response as? HTTPURLResponse)?.statusCode == 200 {
+            return try decoder.decode(Response.self, from: data)
+        } else {
+            throw Errors.unsuccessful(body: data, status: statusCode)
+        }
     }
 }
+
