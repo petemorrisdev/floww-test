@@ -26,5 +26,31 @@ final class HTTPClientTests: XCTestCase {
         
         XCTAssertNotNil(response)
     }
+    
+    func test_unsuccessfulResponse() async throws {
+        let response = try XCTUnwrap(
+            HTTPURLResponse(
+                url: try XCTUnwrap(URL(string: "https://floww.com")),
+                statusCode: 400,
+                httpVersion: nil,
+                headerFields: nil
+            )
+        )
+        session.response = response
+        session.data = "Error".data(using: .utf8)
+        
+        do {
+            let _: MockDecodable = try await httpClient.get(urlComponents: URLComponents.valid)
+            XCTFail()
+        } catch {
+            switch error {
+            case let HTTPClient.Errors.unsuccessful(body, status):
+                XCTAssertEqual(body, session.data)
+                XCTAssertEqual(status, 400)
+            default:
+                XCTFail()
+            }
+        }
+    }
 
 }

@@ -23,6 +23,7 @@
 		87B981A429A05BF7004C9225 /* MarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A329A05BF7004C9225 /* MarketTests.swift */; };
 		87B981A629A05C3C004C9225 /* Market+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A529A05C3C004C9225 /* Market+TestData.swift */; };
 		87B981A829A05C43004C9225 /* Chart+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B981A729A05C43004C9225 /* Chart+TestData.swift */; };
+		87C14D1C29A3A137002FCB0B /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */; };
 		87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA629A156D000430C58 /* HTTPClient.swift */; };
 		87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA829A1573B00430C58 /* EndPoint.swift */; };
 		87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBAB29A1593700430C58 /* EndPointTests.swift */; };
@@ -70,7 +71,8 @@
 		87CCEC2029A2E27D00430C58 /* MarketDetailStorePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC1F29A2E27D00430C58 /* MarketDetailStorePreview.swift */; };
 		87CCEC2229A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2129A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift */; };
 		87CCEC2629A2E4B600430C58 /* MarketDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2529A2E4B600430C58 /* MarketDetailTests.swift */; };
-		87CCEC2A29A3907B00430C58 /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2929A3907B00430C58 /* ErrorBanner.swift */; };
+		87CCEC2829A38C5700430C58 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		87CCEC2A29A3907B00430C58 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,7 @@
 		87B981A329A05BF7004C9225 /* MarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTests.swift; sourceTree = "<group>"; };
 		87B981A529A05C3C004C9225 /* Market+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Market+TestData.swift"; sourceTree = "<group>"; };
 		87B981A729A05C43004C9225 /* Chart+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+TestData.swift"; sourceTree = "<group>"; };
+		87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
 		87CCEBA629A156D000430C58 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		87CCEBA829A1573B00430C58 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		87CCEBAB29A1593700430C58 /* EndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTests.swift; sourceTree = "<group>"; };
@@ -157,7 +160,6 @@
 		87CCEC1F29A2E27D00430C58 /* MarketDetailStorePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailStorePreview.swift; sourceTree = "<group>"; };
 		87CCEC2129A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedMarketChart+PreviewData.swift"; sourceTree = "<group>"; };
 		87CCEC2529A2E4B600430C58 /* MarketDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailTests.swift; sourceTree = "<group>"; };
-		87CCEC2929A3907B00430C58 /* ErrorBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,7 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				87CCEC1D29A2E04D00430C58 /* StandardImage.swift */,
-				87CCEC2929A3907B00430C58 /* ErrorBanner.swift */,
+				87C14D1B29A3A137002FCB0B /* ErrorBanner.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -596,14 +598,16 @@
 				87CCEC2029A2E27D00430C58 /* MarketDetailStorePreview.swift in Sources */,
 				87B9819629A05AF0004C9225 /* MarketChart.swift in Sources */,
 				87CCEBF329A2386E00430C58 /* CoinAPI.swift in Sources */,
+				87C14D1C29A3A137002FCB0B /* ErrorBanner.swift in Sources */,
 				87CCEBF129A2367500430C58 /* CoinGeckoAPI.swift in Sources */,
 				87CCEC0929A2A0D700430C58 /* LocalizedMarketChart.swift in Sources */,
 				87CCEBE629A18FE300430C58 /* MarketsCell.swift in Sources */,
+				87CCEC2829A38C5700430C58 /* (null) in Sources */,
 				87CCEC1629A2AA5A00430C58 /* Environment+Factory.swift in Sources */,
 				87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */,
 				87CCEBD329A17A2E00430C58 /* NumberFormatter+Constants.swift in Sources */,
 				87CCEBC329A16B5400430C58 /* EndPoint+CoinGecko.swift in Sources */,
-				87CCEC2A29A3907B00430C58 /* ErrorBanner.swift in Sources */,
+				87CCEC2A29A3907B00430C58 /* (null) in Sources */,
 				87CCEBC129A16B3400430C58 /* FetchChart.swift in Sources */,
 				87CCEBEA29A193C800430C58 /* MarketsStorePreview.swift in Sources */,
 				87CCEC1E29A2E04D00430C58 /* StandardImage.swift in Sources */,
