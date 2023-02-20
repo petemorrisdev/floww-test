@@ -4,5 +4,5 @@
 "pullToRefresh" = "Pull to refresh 👆";
 "retry" = "Retry";
 "markets" = "Markets";
-"rateLimitError" = "You've exceeded the rete limit. Please wait for a few minutes and try again";
+"rateLimitError" = "You've exceeded the rate limit. Please wait for a few minutes and try again";
 "fallbackError" = "Something went wrong";
