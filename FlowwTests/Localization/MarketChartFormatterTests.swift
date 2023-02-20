@@ -18,8 +18,8 @@ final class MarketChartFormatterTests: XCTestCase {
         let localizedMarketChart = formatter.format(chart: chart)
         
         XCTAssertEqual(localizedMarketChart.marks.count, 1)
-        XCTAssertEqual(localizedMarketChart.marks[0].xLabel, "Date")
-        XCTAssertEqual(localizedMarketChart.marks[0].yLabel, "Price")
+        XCTAssertEqual(localizedMarketChart.marks[0].xLabel, LocalizedStringKey.date)
+        XCTAssertEqual(localizedMarketChart.marks[0].yLabel, LocalizedStringKey.price)
         XCTAssertEqual(localizedMarketChart.marks[0].date, Date(timeIntervalSince1970: timestampSeconds))
         XCTAssertEqual(localizedMarketChart.marks[0].price, price)
     }
