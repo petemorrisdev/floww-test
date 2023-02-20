@@ -27,6 +27,8 @@
 		87C14D1E29A3B03D002FCB0B /* HTTPError+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D1D29A3B03D002FCB0B /* HTTPError+Localization.swift */; };
 		87C14D2129A3B353002FCB0B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 87C14D2329A3B353002FCB0B /* Localizable.strings */; };
 		87C14D2529A3B40D002FCB0B /* LocalizedStringKey+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D2429A3B40D002FCB0B /* LocalizedStringKey+Strings.swift */; };
+		87C14D2729A3BCD5002FCB0B /* MarketsCell+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D2629A3BCD5002FCB0B /* MarketsCell+Search.swift */; };
+		87C14D2929A3BE47002FCB0B /* MarketsCellSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C14D2829A3BE47002FCB0B /* MarketsCellSearchTests.swift */; };
 		87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA629A156D000430C58 /* HTTPClient.swift */; };
 		87CCEBA929A1573B00430C58 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBA829A1573B00430C58 /* EndPoint.swift */; };
 		87CCEBAC29A1593700430C58 /* EndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEBAB29A1593700430C58 /* EndPointTests.swift */; };
@@ -119,6 +121,8 @@
 		87C14D1D29A3B03D002FCB0B /* HTTPError+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HTTPError+Localization.swift"; sourceTree = "<group>"; };
 		87C14D2229A3B353002FCB0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		87C14D2429A3B40D002FCB0B /* LocalizedStringKey+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedStringKey+Strings.swift"; sourceTree = "<group>"; };
+		87C14D2629A3BCD5002FCB0B /* MarketsCell+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketsCell+Search.swift"; sourceTree = "<group>"; };
+		87C14D2829A3BE47002FCB0B /* MarketsCellSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsCellSearchTests.swift; sourceTree = "<group>"; };
 		87CCEBA629A156D000430C58 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		87CCEBA829A1573B00430C58 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		87CCEBAB29A1593700430C58 /* EndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointTests.swift; sourceTree = "<group>"; };
@@ -383,6 +387,7 @@
 				87CCEBE729A192B200430C58 /* Markets.swift */,
 				87CCEBE029A1871E00430C58 /* MarketsView.swift */,
 				87CCEBE529A18FE300430C58 /* MarketsCell.swift */,
+				87C14D2629A3BCD5002FCB0B /* MarketsCell+Search.swift */,
 			);
 			path = Markets;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				87CCEBF529A23AC900430C58 /* MarketsTests.swift */,
+				87C14D2829A3BE47002FCB0B /* MarketsCellSearchTests.swift */,
 			);
 			path = Markets;
 			sourceTree = "<group>";
@@ -599,6 +605,7 @@
 				87CCEC0729A29FAB00430C58 /* MarketDetail.swift in Sources */,
 				87B9819D29A05BD2004C9225 /* Interval.swift in Sources */,
 				87CCEBBF29A16B0600430C58 /* FetchMarkets.swift in Sources */,
+				87C14D2729A3BCD5002FCB0B /* MarketsCell+Search.swift in Sources */,
 				87CCEC0B29A2A19600430C58 /* MarketChartFormatter.swift in Sources */,
 				87CCEBE829A192B200430C58 /* Markets.swift in Sources */,
 				87CCEBEF29A2362400430C58 /* Store.swift in Sources */,
@@ -663,6 +670,7 @@
 				87CCEC1929A2CDCB00430C58 /* MarketChartFormatterTests.swift in Sources */,
 				87CCEBD629A17EF100430C58 /* MarketFormatterTests.swift in Sources */,
 				87CCEBDA29A1820600430C58 /* IntExtensionTests.swift in Sources */,
+				87C14D2929A3BE47002FCB0B /* MarketsCellSearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
