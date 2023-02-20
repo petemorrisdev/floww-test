@@ -23,7 +23,12 @@ struct MarketsView: View {
                     MarketDetailView(
                         marketDetail: factory.makeMarketChart(market: market)
                     )
+                    // Adding `id` is currently required in order to get the `NavigationLink` to work on ipad.
+                    // This seems to be undocumented, so I think it may be a bug in `NavigationSplitView`.
+                    // Without the id, the detail column on iPad will not update when you choose another market.
+                    .id(market.id)
                 } label: {
+                    
                     MarketView(market: market)
                 }
                 
