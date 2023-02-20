@@ -2,7 +2,7 @@ import Foundation
 
 extension Array where Element == MarketsCell {
     func filter(prefix: String) -> [MarketsCell] {
-        guard let regex = try? Regex(prefix.lowercased()) else {
+        guard !prefix.isEmpty, let regex = try? Regex(prefix.lowercased()) else {
             return self
         }
         
