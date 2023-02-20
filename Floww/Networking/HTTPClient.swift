@@ -18,7 +18,7 @@ struct HTTPClient: HTTP {
         guard let url = urlComponents.url else {
             throw URLError(.badURL)
         }
-        
+        URLSession.shared.configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
         let (data, _) = try await session.data(from: url, delegate: nil)
         let response = try decoder.decode(Response.self, from: data)
         return response

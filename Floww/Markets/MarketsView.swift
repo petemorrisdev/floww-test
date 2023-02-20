@@ -26,6 +26,14 @@ struct MarketsView: View {
                 } label: {
                     MarketView(market: market)
                 }
+                
+            case .pullToRefresh:
+                Text("Pull to refresh 👆")
+                    .padding()
+                    .frame(minWidth: .zero, maxWidth: .infinity)
+                    .font(.headline)
+                    .multilineTextAlignment(.center)
+                    .listRowSeparator(.hidden)
             }
             
         }
@@ -37,6 +45,7 @@ struct MarketsView: View {
         }
         .listStyle(.plain)
         .animation(.linear, value: markets.cells)
+        .errorBanner(message: markets.errorMessage)
     }
     
     // MARK: LoadingView

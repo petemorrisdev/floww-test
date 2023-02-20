@@ -6,6 +6,7 @@ protocol MarketsStore {
 
 struct Markets {
     private(set) var cells: [MarketsCell] = [.loading]
+    private(set) var errorMessage: String?
     private let store: MarketsStore
     
     init(store: MarketsStore) {
@@ -19,8 +20,12 @@ struct Markets {
                 order: .marketCapDescending
             )
             .map(MarketsCell.market)
+            errorMessage = nil
         } catch {
-            // TODO: Error handling: https://github.com/petemorrisdev/floww-test/issues/15
+            if cells == [.loading] {
+                cells = [.pullToRefresh]
+            }
+            errorMessage = error.localizedDescription
         }
     }
 }

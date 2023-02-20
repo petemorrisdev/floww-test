@@ -27,6 +27,15 @@ struct MarketDetailView: View {
                         y: .value(mark.yLabel, mark.price)
                     )
                 }
+                
+            } else if marketDetail.errorMessage != nil {
+                
+                RefreshButton {
+                    Task {
+                        await marketDetail.fetch()
+                    }
+                }
+                
             } else {
                 
                LoadingView()
@@ -36,6 +45,7 @@ struct MarketDetailView: View {
         .task {
             await marketDetail.fetch()
         }
+        .errorBanner(message: marketDetail.errorMessage)
     }
     
     // MARK: HeaderView
@@ -87,6 +97,19 @@ struct MarketDetailView: View {
                 ProgressView()
             }
             .frame(minWidth: .zero, maxWidth: .infinity)
+            Spacer()
+        }
+    }
+    
+    // MARK: Refresh button
+    
+    private struct RefreshButton: View {
+        let action: () -> Void
+        
+        var body: some View {
+            Spacer()
+            Button("Refresh", action: action)
+                .frame(minWidth: .zero, maxWidth: .infinity)
             Spacer()
         }
     }

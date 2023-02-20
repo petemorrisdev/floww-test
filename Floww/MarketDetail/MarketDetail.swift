@@ -7,6 +7,7 @@ protocol MarketDetailStore {
 struct MarketDetail {
     let market: LocalizedMarket
     private(set) var chart: LocalizedMarketChart?
+    private(set) var errorMessage: String?
     private let store: MarketDetailStore
     private let dateFormatter: DateFormatter
     
@@ -26,6 +27,7 @@ struct MarketDetail {
     
     mutating func fetch() async {
         do {
+            errorMessage = nil
             chart = try await store.fetchMarketChart(
                 id: market.id,
                 currency: .usd,
@@ -33,7 +35,7 @@ struct MarketDetail {
                 interval: .daily
             )
         } catch {
-            // TODO: Error handling: https://github.com/petemorrisdev/floww-test/issues/15
+            errorMessage = error.localizedDescription
         }
     }
     

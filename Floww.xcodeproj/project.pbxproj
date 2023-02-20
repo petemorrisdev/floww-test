@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		878C501D29A3A038000ABCD6 /* MarketDetailStoreMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878C501C29A3A038000ABCD6 /* MarketDetailStoreMock.swift */; };
 		87B9816929A059C5004C9225 /* FlowwApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9816829A059C5004C9225 /* FlowwApp.swift */; };
 		87B9816D29A059C7004C9225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B9816C29A059C7004C9225 /* Assets.xcassets */; };
 		87B9817029A059C7004C9225 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B9816F29A059C7004C9225 /* Preview Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		87CCEC2029A2E27D00430C58 /* MarketDetailStorePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC1F29A2E27D00430C58 /* MarketDetailStorePreview.swift */; };
 		87CCEC2229A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2129A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift */; };
 		87CCEC2629A2E4B600430C58 /* MarketDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2529A2E4B600430C58 /* MarketDetailTests.swift */; };
+		87CCEC2A29A3907B00430C58 /* ErrorBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CCEC2929A3907B00430C58 /* ErrorBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		878C501C29A3A038000ABCD6 /* MarketDetailStoreMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailStoreMock.swift; sourceTree = "<group>"; };
 		87B9816529A059C5004C9225 /* Floww.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Floww.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B9816829A059C5004C9225 /* FlowwApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowwApp.swift; sourceTree = "<group>"; };
 		87B9816C29A059C7004C9225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 		87CCEC1F29A2E27D00430C58 /* MarketDetailStorePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailStorePreview.swift; sourceTree = "<group>"; };
 		87CCEC2129A2E2A700430C58 /* LocalizedMarketChart+PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalizedMarketChart+PreviewData.swift"; sourceTree = "<group>"; };
 		87CCEC2529A2E4B600430C58 /* MarketDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailTests.swift; sourceTree = "<group>"; };
+		87CCEC2929A3907B00430C58 /* ErrorBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +317,7 @@
 				87CCEBB629A15D5D00430C58 /* URLSessionMock.swift */,
 				87CCEBF729A23C3F00430C58 /* MarketsStoreMock.swift */,
 				87CCEBFF29A2414B00430C58 /* CoinAPIMock.swift */,
+				878C501C29A3A038000ABCD6 /* MarketDetailStoreMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				87CCEC1D29A2E04D00430C58 /* StandardImage.swift */,
+				87CCEC2929A3907B00430C58 /* ErrorBanner.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -597,6 +603,7 @@
 				87CCEBA729A156D000430C58 /* HTTPClient.swift in Sources */,
 				87CCEBD329A17A2E00430C58 /* NumberFormatter+Constants.swift in Sources */,
 				87CCEBC329A16B5400430C58 /* EndPoint+CoinGecko.swift in Sources */,
+				87CCEC2A29A3907B00430C58 /* ErrorBanner.swift in Sources */,
 				87CCEBC129A16B3400430C58 /* FetchChart.swift in Sources */,
 				87CCEBEA29A193C800430C58 /* MarketsStorePreview.swift in Sources */,
 				87CCEC1E29A2E04D00430C58 /* StandardImage.swift in Sources */,
@@ -623,6 +630,7 @@
 				87CCEBFE29A2411700430C58 /* StoreTests.swift in Sources */,
 				87CCEC2629A2E4B600430C58 /* MarketDetailTests.swift in Sources */,
 				87B981A629A05C3C004C9225 /* Market+TestData.swift in Sources */,
+				878C501D29A3A038000ABCD6 /* MarketDetailStoreMock.swift in Sources */,
 				87CCEBB329A15B7000430C58 /* HTTPClientTests.swift in Sources */,
 				87CCEBAF29A1596100430C58 /* EndPointMock.swift in Sources */,
 				87CCEBB929A15F8200430C58 /* URLComponents+TestData.swift in Sources */,
