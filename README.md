@@ -29,7 +29,7 @@ Here's the finished task list:
 - [ ] Chart period control
 - [ ] UI tests (Not specifically mentioned in the PDF. However, unit test coverage is good)
 
-I ran out of Bitrise credits before I finished, so any leftover CI jobs are on hold.
+I ran out of Bitrise credits before I finished, so I'm not sure if the final CI job is going to complete.
 
 Here's a screenshot of the tests I ran manually before merging the final PR:
 
