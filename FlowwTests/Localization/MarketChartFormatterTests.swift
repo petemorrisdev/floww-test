@@ -20,7 +20,7 @@ final class MarketChartFormatterTests: XCTestCase {
         XCTAssertEqual(localizedMarketChart.marks.count, 1)
         XCTAssertEqual(localizedMarketChart.marks[0].xLabel, "Date")
         XCTAssertEqual(localizedMarketChart.marks[0].yLabel, "Price")
-        XCTAssertEqual(localizedMarketChart.marks[0].date, Date(timeIntervalSinceReferenceDate: timestampSeconds))
+        XCTAssertEqual(localizedMarketChart.marks[0].date, Date(timeIntervalSince1970: timestampSeconds))
         XCTAssertEqual(localizedMarketChart.marks[0].price, price)
     }
 
