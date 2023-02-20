@@ -3,10 +3,10 @@ import SwiftUI
 struct MarketsView: View {
     private enum Constants {
         static let spacing = 16.0
-        static let imageTransaction = Transaction(animation: .default)
-        static let imageSize = 40.0
+        static let imageSize = CGSize(width: 40.0, height: 40.0)
     }
     
+    @Environment(\.factory) var factory
     @State var markets: Markets
     
     // MARK: List
@@ -20,8 +20,9 @@ struct MarketsView: View {
                 
             case let .market(market):
                 NavigationLink {
-                    // TODO: Navigate to ChartView
-                    EmptyView()
+                    MarketDetailView(
+                        marketDetail: factory.makeMarketChart(market: market)
+                    )
                 } label: {
                     MarketView(market: market)
                 }
@@ -82,20 +83,10 @@ struct MarketsView: View {
                 // https://github.com/onevcat/Kingfisher/issues/1988
                 // https://developer.apple.com/forums/thread/682498
                 // https://developer.apple.com/forums/thread/718480
-                AsyncImage(url: market.image, transaction: Constants.imageTransaction) { phase in
-                    
-                    switch phase {
-                    case let .success(image):
-                        image.resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: Constants.imageSize, height: Constants.imageSize)
-                        
-                    default:
-                        Color.clear
-                            .frame(width: Constants.imageSize, height: Constants.imageSize)
-                    }
-                    
-                }
+                StandardImage(
+                    image: market.image,
+                    size: Constants.imageSize
+                )
                 
                 MarketDetailsView(market: market)
                 

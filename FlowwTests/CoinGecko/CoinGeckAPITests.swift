@@ -5,12 +5,15 @@ final class CoinGeckAPITests: XCTestCase {
 
     private var coinGeckoAPI: CoinGeckoAPI!
     private var http: HTTPClientMock!
-    private var response: [Market]!
     
     override func setUp() {
         http = HTTPClientMock()
         coinGeckoAPI = CoinGeckoAPI(http: http)
-        response = [Market(
+    }
+    
+    func test_fetchMarkets() async throws {
+        http.error = nil
+        http.response = [Market(
             id: "",
             symbol: "",
             marketCap: 1,
@@ -19,11 +22,6 @@ final class CoinGeckAPITests: XCTestCase {
             image: "",
             currentPrice: 1.0
         )]
-    }
-    
-    func test_fetchMarkets() async throws {
-        http.response = response
-        http.error = nil
         
         _ = try await coinGeckoAPI.fetchMarkets(currency: .usd, order: .marketCapDescending)
         
@@ -31,6 +29,23 @@ final class CoinGeckAPITests: XCTestCase {
             currency: .usd,
             order: .marketCapDescending,
             perPage: .max
+        ).urlComponents
+        
+        XCTAssertEqual(http.urlComponents, expectedURLComponents)
+    }
+    
+    func test_fetchMarketChart() async throws {
+        http.error = nil
+        http.response = MarketChart(prices: [[1.0, 2.0]])
+        
+        let coinID = "1"
+        _ = try await coinGeckoAPI.fetchMarketChart(id: coinID, currency: .usd, period: .oneYear, interval: .daily)
+        
+        let expectedURLComponents = CoinGecko.FetchMarketChart(
+            coinID: coinID,
+            currency: .usd,
+            days: .oneYear,
+            interval: .daily
         ).urlComponents
         
         XCTAssertEqual(http.urlComponents, expectedURLComponents)
